@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('bg.jpg'); /* Укажите путь к вашему изображению */
+    background-size: cover; /* Картинка будет масштабироваться по размеру экрана */
+    background-position: center; /* Центрирует изображение */
+    background-repeat: no-repeat; /* Отключает повторение изображения */
+    font-size: 20px; /* Размер текста на странице */
+}
+
+.weather-app {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8); /* Прозрачный белый фон, чтобы текст был читаемым */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 600px; /* Увеличенная ширина */
+}
+
+#city-input {
+    width: calc(100% - 20px);
+    padding: 18px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px; /* Увеличен размер текста в поле ввода */
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px; /* Увеличен размер текста на кнопке */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#weather-result {
+    margin-top: 25px;
+    padding-right: 10px;
+}
+
+#current-weather, #forecast-container {
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-item {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 18px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 18px; /* Увеличен размер текста для элементов прогноза */
+}
+
+.forecast-item div {
+    flex: 1;
+}
+
+.forecast-item .temp-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forecast-item .temp-column span {
+    display: flex;
+    align-items: center;
+    font-size: 20px; /* Увеличен размер текста для температур */
+}
+
+.forecast-item .temp-column span svg {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.forecast-item .temp-column span .down-arrow {
+    fill: #FF0000; /* Красный цвет для стрелки вниз */
+}
+
+.forecast-item .temp-column span .up-arrow {
+    fill: #00FF00; /* Зеленый цвет для стрелки вверх */
+}
+
+.weather-description {
+    display: flex;
+    align-items: center;
+    font-size: 20px; /* Увеличен размер текста для описания погоды */
+}
+
+.weather-description img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px; /* Отступ между иконкой и текстом */
+}
+
+#current-weather {
+    margin-top: 0;
+}
+
+#current-weather .weather-description {
+    margin-bottom: 15px;
+}
+
+#current-weather .temp-column span {
+    font-size: 30px; /* Увеличен размер текста для текущей температуры */
+}
+
+#current-weather .forecast-item {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#current-weather .temp-column span {
+    font-size: 20px;
+}
